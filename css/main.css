@@ -54,7 +54,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background: url("/backlit-bicycles-clouds-533646.jpg");
+  background: url("../assets/backlit-bicycles-clouds-533646.jpg");
   background-size: cover;
   background-position: center 10;
   z-index: 1;
