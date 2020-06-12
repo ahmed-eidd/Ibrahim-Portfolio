@@ -22,25 +22,30 @@
         <span class="shift">Cordy</span>Ceps.
       </div>
       <ul class="nav__list">
-        <li class="nav__items"><a href="#" class="nav__links">Home</a></li>
-        <li class="nav__items"><a href="#" class="nav__links">About</a></li>
-        <li class="nav__items"><a href="#" class="nav__links">Gallery</a></li>
-        <li class="nav__items"><a href="#" class="nav__links">Contact US</a></li>
+        <li class="nav__items"><a href="#home" class="nav__links">Home</a></li>
+        <li class="nav__items"><a href="#sec1" class="nav__links">About</a></li>
+        <li class="nav__items"><a href="#sec2" class="nav__links">Gallery</a></li>
+        <li class="nav__items"><a href="#sec3" class="nav__links">Contact US</a></li>
       </ul>
       <div class="nav__icons">
         <ion-icon class="nav__icon" name="logo-facebook"></ion-icon>
         <ion-icon class="nav__icon" name="logo-instagram"></ion-icon>
       </div>
     </nav>
-    <header class="header">
+    <header class="header" id=home>
 
       <div class="hero">
-        <h1 class="hero__text" data-aos="fade-up">i<span class="shift">brahim</span> m<span class="shift">agdy</span></h1>
+        <h1 class="hero__text" data-aos="fade-up">i<span class="shift">brahim</span> m<span class="shift">agdy</span>
+        </h1>
         <p class="hero__des">photographer</p>
       </div>
     </header>
 
   </div>
+  <section id=sec1>Section 1</section>
+  <section id=sec2>Section 2</section>
+  <section id=sec3>Section 3</section>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -50,6 +55,9 @@
       easing: 'ease-in-out'
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>

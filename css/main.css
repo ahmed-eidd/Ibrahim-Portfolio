@@ -30,6 +30,7 @@ body {
   line-height: 1.6;
   background-repeat: none;
   min-height: 100vh;
+  background-color: black;
 }
 
 .container {
@@ -40,6 +41,11 @@ body {
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   -ms-grid-rows: 15vh 85vh;
       grid-template-rows: 15vh 85vh;
+}
+
+section {
+  height: 100vh;
+  color: white;
 }
 
 .header {
@@ -124,11 +130,17 @@ body {
   }
 }
 
+.sticky {
+  padding: 10px 50px !important;
+  background-color: rgba(244, 244, 244, 0.5);
+}
+
 .nav {
-  grid-column: center-start / center-end;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,6 +151,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .nav__logo {
