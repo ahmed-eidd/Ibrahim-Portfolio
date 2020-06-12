@@ -1,3 +1,59 @@
+@keyframes heroAnimate {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+}
+
+@keyframes secondTextAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  // 0% {
+  //   opacity: 0;
+  // }
+
+  // 50% {
+  //   opacity: 0.5;
+  // }
+  // 80% {
+  //   opacity: 0.8;
+  // }
+  // 90% {
+  //   opacity: 0.9;
+  // }
+  // 100% {
+  //   opacity: 1;
+  // }
+  
+}
+
 .nav {
   grid-column: center-start / center-end;
   grid-row: 1 / 2;
@@ -9,7 +65,7 @@
   z-index: 5;
   &__logo {
     font-size: 4rem;
-    font-family: "Rozha One", serif;
+    font-family: 'Rozha One', serif;
     border: 2px solid black;
     display: inline-block;
     padding: 0 1rem;
@@ -26,8 +82,7 @@
   &__items {
     display: block;
     padding: 0 5rem;
-    transition: all .5s;
-    
+    transition: all 0.5s;
   }
 
   &__links {
@@ -35,12 +90,12 @@
     color: #000;
     font-size: 1.6rem;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.5s;
     display: inline-block;
     &:hover {
       transform: translateY(-5px);
-      color:  rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
     }
   }
 
@@ -53,10 +108,9 @@
     width: 35px;
     fill: #000;
     font-size: 20px;
-    transition: all .7s;
+    transition: all 0.7s;
     &:hover {
       fill: rgb(190, 190, 190);
-
     }
   }
 }
@@ -74,10 +128,11 @@
   // top: 50%;
   //left: 50%;
   // transform: translate(-50%,-50%);
+  animation: heroAnimate 0.3s ease-in-out;
 
   &__text {
     font-size: 6rem;
-    font-family: "poppins", sans-serif;
+    font-family: 'poppins', sans-serif;
     letter-spacing: 4rem;
     text-transform: uppercase;
     font-weight: lighter;
@@ -90,6 +145,8 @@
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 2rem;
+    animation: secondTextAnimate 10s;
+  
     //font-family: 'rozha one', serif;
   }
 }

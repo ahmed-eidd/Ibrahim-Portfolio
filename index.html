@@ -9,13 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link rel="icon" href="./assets/camera.ico">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <title>Hema Portfolio</title>
 </head>
 
 <body>
   <div class="container">
-  
+
     <nav class="nav">
       <div class="nav__logo">
         <span class="shift">Cordy</span>Ceps.
@@ -34,12 +35,21 @@
     <header class="header">
 
       <div class="hero">
-        <h1 class="hero__text">i<span class="shift">brahim</span> m<span class="shift">agdy</span></h1>
+        <h1 class="hero__text" data-aos="fade-up">i<span class="shift">brahim</span> m<span class="shift">agdy</span></h1>
         <p class="hero__des">photographer</p>
       </div>
     </header>
 
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+      delay: 200,
+      easing: 'ease-in-out'
+    });
+  </script>
 </body>
 
 </html>
