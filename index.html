@@ -42,17 +42,42 @@
     </header>
 
   </div>
-  <section id=sec1>Section 1</section>
+  <section id=sec1 class="gallery">
+    <h3 class="gallery__heading">Gallery</h3>
+    <div class="gallery__imgs" data-aos="fade-up" data-aos-once="true">
+      <div class="gallery__img">
+        <img src="./assets/gallery/grid-1.jpg" alt="photo">
+      </div>
+      <div class="gallery__img">
+        <img src="./assets/gallery/grid-2.jpg" alt="photo">
+      </div>
+      <div class="gallery__img">
+        <img src="./assets/gallery/grid-3.jpg" alt="photo">
+      </div>
+
+      <div class="gallery__img">
+        <img src="./assets/gallery/grid-5.jpg" alt="photo">
+      </div>
+      <div class="gallery__img">
+        <img src="./assets/gallery/grid-6.jpg" alt="photo">
+      </div>
+      <div class="gallery__img">
+        <img src="./assets/gallery/grid-7.jpg" alt="photo">
+      </div>
+
+    </div>
+  </section>
+
   <section id=sec2>Section 2</section>
   <section id=sec3>Section 3</section>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset: 300,
+      offset: 400,
       duration: 1000,
       delay: 200,
-      easing: 'ease-in-out'
+      easing: 'ease'
     });
   </script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">

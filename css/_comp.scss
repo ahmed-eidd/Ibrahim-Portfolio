@@ -54,10 +54,13 @@
   
 }
 .sticky {
-  padding: 10px 50px !important ;
+  padding: 5px 40px !important ;
   background-color: rgba($color: #f4f4f4, $alpha: 0.5);
 }
-
+.sticky-logo {
+  font-size: 3rem !important;
+  padding: 0 .5rem !important;
+}
 .nav {
   position:fixed;
   width: 100%;
