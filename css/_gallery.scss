@@ -1,7 +1,6 @@
 .gallery {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem 4rem;
   &__heading {
@@ -14,11 +13,11 @@
   }
   &__imgs {
     display: grid;
-    grid-template-columns: repeat(3,22rem);
-    grid-gap: .5rem;
+    grid-template-columns: repeat(3,24rem);
+    grid-gap: 1rem;
   }
   &__img {
-    width: 22rem;
+    width: 24rem;
     height: 34rem;
 
     img {
