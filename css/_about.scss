@@ -17,5 +17,8 @@
     text-align: justify;
     line-height: 1.8;
     padding: 5rem 40rem;
+    @media only screen and (max-width: $bp-largest) {
+      padding: 4rem 25rem;
+    }
   }
-} 
+}

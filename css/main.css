@@ -128,7 +128,13 @@ section {
 
 .sticky-logo {
   font-size: 3rem !important;
-  padding: 0 .5rem !important;
+  padding: 0 0.5rem !important;
+}
+
+@media only screen and (max-width: 75em) {
+  .sticky-logo {
+    font-size: 2rem !important;
+  }
 }
 
 .nav {
@@ -136,7 +142,7 @@ section {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 30px 90px;
+  padding: 3rem 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,12 +157,24 @@ section {
   transition: all 0.3s;
 }
 
+@media only screen and (max-width: 75em) {
+  .nav {
+    padding: 3rem 3rem;
+  }
+}
+
 .nav__logo {
   font-size: 4rem;
   font-family: 'Rozha One', serif;
   border: 2px solid black;
   display: inline-block;
   padding: 0 1rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .nav__logo {
+    font-size: 2.5rem;
+  }
 }
 
 .nav__list {
@@ -231,12 +249,24 @@ section {
   margin-bottom: 4rem;
 }
 
+@media only screen and (max-width: 75em) {
+  .hero__text {
+    font-size: 4.5rem;
+  }
+}
+
 .hero__des {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 2rem;
   -webkit-animation: secondTextAnimate 10s;
           animation: secondTextAnimate 10s;
+}
+
+@media only screen and (max-width: 75em) {
+  .hero__des {
+    font-size: 2.5rem;
+  }
 }
 
 .gallery {
@@ -251,6 +281,16 @@ section {
   padding: 2rem 4rem;
 }
 
+@media only screen and (max-width: 75em) {
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 2rem;
+  }
+}
+
 .gallery__heading {
   font-size: 2.5rem;
   margin-top: 3rem;
@@ -258,6 +298,14 @@ section {
   letter-spacing: 1.8px;
   border-bottom: 1px solid white;
   padding: 1rem 0;
+}
+
+@media only screen and (max-width: 75em) {
+  .gallery__heading {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
 }
 
 .gallery__imgs {
@@ -309,6 +357,12 @@ section {
   text-align: justify;
   line-height: 1.8;
   padding: 5rem 40rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .about__text {
+    padding: 4rem 25rem;
+  }
 }
 
 .contact {

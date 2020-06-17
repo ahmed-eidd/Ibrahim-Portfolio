@@ -3,6 +3,10 @@
   justify-content: space-around;
   align-items: center;
   padding: 2rem 4rem;
+  @media only screen and (max-width: $bp-largest) {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
   &__heading {
     font-size: 2.5rem;
     margin-top: 3rem;
@@ -10,10 +14,15 @@
     letter-spacing: 1.8px;
     border-bottom: 1px solid white;
     padding: 1rem 0;
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      margin-top: 1rem;
+    }
   }
   &__imgs {
     display: grid;
-    grid-template-columns: repeat(3,24rem);
+    grid-template-columns: repeat(3, 24rem);
     grid-gap: 1rem;
   }
   &__img {
