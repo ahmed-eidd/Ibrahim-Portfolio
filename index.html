@@ -70,22 +70,44 @@
 
   <section id=sec2 class="about">
     <h3 class="about__heading">
-      About Me 
+      About Me
     </h3>
 
 
     <div class="about__text">
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis voluptatem quisquam vero at error nulla dolorem nisi, nemo cupiditate, dignissimos doloribus qui corporis reiciendis culpa odit eaque totam ut blanditiis ratione soluta architecto eos nesciunt beatae consequuntur! Tempore animi ab deleniti iusto cumque, illum natus excepturi aliquam optio ea, temporibus soluta minima corporis, cum magnam maiores consequatur esse? Sit, vero.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis voluptatem quisquam vero at error nulla
+        dolorem nisi, nemo cupiditate, dignissimos doloribus qui corporis reiciendis culpa odit eaque totam ut
+        blanditiis ratione soluta architecto eos nesciunt beatae consequuntur! Tempore animi ab deleniti iusto cumque,
+        illum natus excepturi aliquam optio ea, temporibus soluta minima corporis, cum magnam maiores consequatur esse?
+        Sit, vero.
       </p>
     </div>
   </section>
-  <section id=sec3>Section 3</section>
+  <section id=sec3 class="contact">
+    <form action="" class="contact__form">
+      <div class="contact__form__container">
+        <input type="text" name="name" required autocapitalize="on" autocomplete="off" class="contact__form__input">
+        <label for="name" class="contact__form__label"><span class="contact__form__span">Name</span></label>
+      </div>
+      <div class="contact__form__container">
+        <input type="email" name="email" required autocapitalize="on" autocomplete="off" class="contact__form__input">
+        <label for="name" class="contact__form__label"><span class="contact__form__span">Email</span></label>
+      </div>
+      <div class="contact__form__container ">
+        <input type="text" name="message" required autocapitalize="on" autocomplete="off" class="contact__form__input">
+        <label for="name" class="contact__form__label"><span class="contact__form__span">Message</span></label>
+      </div>
+      <button class="contact__btn" type="submit"><span class="contact__btn__span">SUMBIT</span></button>
+    </form>
+
+
+  </section>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset: 400,
+      offset: 300,
       duration: 1000,
       delay: 200,
       easing: 'ease'
