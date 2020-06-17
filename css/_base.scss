@@ -28,14 +28,18 @@ body {
 
 
 .container {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem,1fr) [center-start] repeat(12, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
-  grid-template-rows: 15vh 85vh;
-  //background-color: grey;
+  // display: grid;
+  // grid-template-columns: [full-start] minmax(6rem,1fr) [center-start] repeat(12, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
+  // grid-template-rows: 15vh 85vh;
+  // //background-color: grey;
   
 }
 
 section {
   height: 100vh;
+  color: white;
+}
+
+.active {
   color: white;
 }
