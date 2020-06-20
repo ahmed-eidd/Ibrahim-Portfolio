@@ -36,8 +36,9 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   color: white;
+  margin: 5rem 0;
 }
 
 .active {
