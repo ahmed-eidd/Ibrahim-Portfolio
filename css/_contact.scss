@@ -26,6 +26,10 @@
       width: 40rem;
       margin-bottom: 4rem;
       overflow-x: hidden;
+      @media only screen and (max-width: $bp-small) {
+        width: 30rem;
+        width: 100%;
+      }
     }
 
     &__input {
@@ -92,7 +96,7 @@
     position: relative;
     font-weight: 500;
     letter-spacing: 1px;
-    transition: color .2s ease;
+    transition: color 0.2s ease;
 
     &__span {
       position: relative;
@@ -100,7 +104,6 @@
     }
     &:hover {
       color: black;
-
     }
 
     &::before {
@@ -112,14 +115,12 @@
       top: 0;
       right: 0;
       transform: scaleX(0);
-      transition: transform .3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
       transform-origin: left;
       z-index: 1;
-    
     }
     &:hover::before {
       transform: scaleX(1);
-    
     }
   }
 }

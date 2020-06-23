@@ -20,5 +20,11 @@
     @media only screen and (max-width: $bp-largest) {
       padding: 4rem 25rem;
     }
+   @media only screen and (max-width: $bp-small) {
+      padding: 0rem 3rem;
+      text-align: start;
+      font-size: 1.6rem;
+      // text-align-last: center;
+    } 
   }
 }
