@@ -10,9 +10,9 @@ logo.classList.toggle('sticky-logo', window.pageYOffset > 0);
 nav.classList.toggle('sticky', window.pageYOffset > 0);
 
 
-window.onclick = () => {
- console.log(window.pageYOffset)
-}
+// window.onclick = () => {
+//  console.log(window.pageYOffset)
+// }
  
 // const navList = document.querySelector('.nav__list')
 // const navLinks = document.querySelectorAll('.nav__items');
@@ -35,3 +35,10 @@ window.onclick = () => {
 // //   this.className += " active";
 // //   });
 // // }
+const btn = document.querySelector('.contact__btn');
+
+// btn.addEventListener('click', () => {
+//   console.log('click')
+// })
+
+
